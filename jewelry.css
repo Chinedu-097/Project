@@ -247,6 +247,32 @@ a{
   height: 60px;
   padding-top: 10px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.pro_nav{ 
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 22%;
+  margin-bottom: 10px;
+}
+
+.pro_wrapper > h1{
+  margin-left: 25%;
+}
+
+.pro_nav > nav{
+  font-size: 14px;
+}
+
+.pro_nav > nav:hover{
+  color: goldenrod;
 }
 
 .wrapper_2{
@@ -268,6 +294,7 @@ a{
 
 .wrapper_2 > h3{
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .card2 > img {
@@ -419,6 +446,23 @@ footer{
     width: 50%;
   }
 
+  .pro_wrapper{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .pro_wrapper > h1{
+    margin-left: 0;
+  }
+
+  .pro_nav{
+    margin-right: 0;
+    margin-top: 7px;
+    margin-bottom: 30px;
+  }
+
 }
 
 
@@ -467,7 +511,7 @@ footer{
   }
 
   .left_container > h1{
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 35px;
     margin-left: 15px;
   }
@@ -480,14 +524,23 @@ footer{
 
   .shop_now{
     margin-left: 15px;
-    border: none;
   }
 
   .card1{
-    height: 310px;
+    height: 240px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
+  }
+
+  .Rectangle{
+    width: 500px;
+    height: 180px;
+    margin-left: 0;
+  }
+
+  .Rectangle > h3{
+    margin-top: 130px;
   }
 
   .card2{
@@ -495,6 +548,25 @@ footer{
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
+  }
+
+  .wrapper_2{
+    margin-left: 0px;
+  }
+
+  .pro_wrapper > h1{
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .pro_wrapper{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .pro_nav{
+    margin-right: 0;
   }
 
   footer{
