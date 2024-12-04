@@ -6,9 +6,8 @@
 body{
   width: 100%;
   display: block;
-  /* flex-direction: column; */
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(229, 223, 208);
+  /* background-color: rgb(229, 223, 208); */
 }
 
 header{
@@ -48,9 +47,13 @@ header{
 
 nav{
   font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav:hover{
+  color: goldenrod;
 }
 
 .sign{
@@ -74,9 +77,9 @@ nav{
 
 
 .sign_btn:hover{
-  background-color: #4c4a4a;
+  background-color: goldenrod;
   color: white;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 
 .hamburger_menu{
@@ -154,13 +157,12 @@ a{
 
 .collection{
   width: 100%;
-  background-color: 
-  10.rgb(229, 223, 208);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  background-color: rgb(202, 198, 198);
 }
 
 .coll_wrapper{
@@ -232,7 +234,6 @@ a{
 }
 
 
-
 .product{
   width: 100%;
   display: flex;
@@ -248,27 +249,26 @@ a{
   padding-top: 10px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  
+  justify-content: space-evenly;
 }
 
 .pro_nav{ 
   width: 400px;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   align-items: center;
-  margin-right: 22%;
   margin-bottom: 10px;
+  
 }
 
 .pro_wrapper > h1{
-  margin-left: 25%;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .pro_nav > nav{
-  font-size: 14px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .pro_nav > nav:hover{
@@ -281,7 +281,8 @@ a{
   margin-left: 30px;
   text-align: center;
   height: 300px;
-  width: 250px;
+  width: 249px;
+  background-color: rgb(202, 198, 198);
 }
 
 .card2{
@@ -302,7 +303,6 @@ a{
   height: 100%;
   object-fit: cover;
 }
-
 
 
 footer{
@@ -350,7 +350,6 @@ footer{
   margin-left: 10px;
   margin-bottom: 20px;
 }
-
 
 
 .text_wrapper{
@@ -563,6 +562,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    flex-wrap: wrap;
   }
 
   .pro_nav{
