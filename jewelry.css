@@ -7,7 +7,6 @@ body{
   width: 100%;
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  /* background-color: rgb(229, 223, 208); */
 }
 
 header{
@@ -18,6 +17,7 @@ header{
   height: 80px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 
 
@@ -27,11 +27,10 @@ header{
   align-items: center;
   height: 10vh;
   width: 20%;
-  padding-left: 30px;
 }
 
 .logo{
-  margin-left: 0;
+  margin-left: 75px;
   font-size: 2em;
 }
 
@@ -39,7 +38,7 @@ header{
 .nav_holder{
   color: black;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 50%;
   height: 10vh;
   align-items: center;
@@ -50,6 +49,7 @@ nav{
   color: black;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 45px;
 }
 
 nav:hover{
@@ -63,7 +63,6 @@ nav:hover{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 30px;
 }
 
 
@@ -73,6 +72,7 @@ nav:hover{
   font-size: 15px;
   width: 50%;
   height: 20px;
+  margin-right: 75px;
 }
 
 
@@ -126,8 +126,8 @@ a{
 
 
 .left_container > p{
-  font-size: 20px;
-  margin-top:20px ;
+  font-size: 17px;
+  margin-top:5px ;
   margin-left: 40px;
   color: white;
   width: 80%;
@@ -161,7 +161,7 @@ a{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: rgb(202, 198, 198);
 }
 
@@ -177,17 +177,19 @@ a{
 }
 
 .coll_mid{
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .card1{
   width: 220px;
-  height: 230px;
+  height: 250px;
   background-color: rgb(241, 241, 241);
   margin-left: 20px;
   margin-bottom: 20px;
@@ -199,7 +201,7 @@ a{
 
 .card1 > img{
   width: 100%;
-  height: 81%;
+  height: 83%; 
   border-radius: 7px 7px 0px 0px;
 }
 
@@ -209,29 +211,6 @@ a{
   margin-bottom: 10px;
 }
 
-.Rectangle{
-  width: 460px;
-  height: 230px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-color: rgb(241, 241, 241);
-  display: flex;
-  justify-content: space-between;
-  border-radius: 7px;
-  box-shadow: 1px 1px 10px rgb(136, 133, 133), 1px 2px 10px rgb(226, 223, 223) ;
-}
-
-.Rectangle > img{
-  width: 50%;
-  height: 100%;
-  border-radius: 0px 7px 7px 0px;
-}
-
-.Rectangle > h3{
-  margin-top: 170px;
-  margin-left: 50px;
-  font-size: 20px;
-}
 
 
 .product{
@@ -241,6 +220,7 @@ a{
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  background-color: rgb(202, 198, 198);
 }
 
 .pro_wrapper{
@@ -249,21 +229,28 @@ a{
   padding-top: 10px;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(202, 198, 198);
+  margin-bottom: 20px;
 }
 
 .pro_nav{ 
-  width: 400px;
+  width: 500px;
+  height: 100%;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 10px;
-  
+  margin-right: 150px;
 }
 
-.pro_wrapper > h1{
-  text-align: center;
-  margin-top: 10px;
+.pro_text{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 150px;
 }
 
 .pro_nav > nav{
@@ -278,19 +265,21 @@ a{
 .wrapper_2{
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  margin-left: 20px;
   text-align: center;
-  height: 300px;
-  width: 249px;
-  background-color: rgb(202, 198, 198);
+  height: 270px;
+  width: 230px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgb(196, 193, 193), 0px 6px 20px rgb(226, 223, 223) ;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .card2{
   height: 270px;
-  width: 249px;
+  width: 230px;
   justify-content: center;
   display: flex;
-  
 }
 
 .wrapper_2 > h3{
@@ -322,26 +311,27 @@ footer{
 
 .icon_wrapper > h1{
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 75px;
   width: 30%;
 }
 
 .phone{
   margin-top: 30px;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 75px;
 }
 
 .phone > a{
   border: none;
   text-decoration: none;
   background-color: transparent;
+  font-size: 15px;
 }
 
 .media{
   display: flex;
   width: 40%;
-  margin-left: 30px;
+  margin-left: 75px;
   margin-top: 20px;
 }
 
@@ -362,11 +352,13 @@ footer{
   margin-left: 20px;
   color: white;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
 .text_wrapper > h3{
   margin-top: 20px;
   margin-left: 20px;
+  font-size: 15px;
 }
 
 
@@ -405,6 +397,10 @@ footer{
     width: 100%;
   }
 
+  .logo{
+    margin-left: 10px;
+  }
+
   header{
     width: 100%;
   }
@@ -420,6 +416,7 @@ footer{
 
   .hamburger_menu{
     width: 17%;
+    margin-right: 20px;
   }
 
   
@@ -450,16 +447,19 @@ footer{
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    height: 100px;
   }
 
-  .pro_wrapper > h1{
+  .pro_text{
     margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .pro_nav{
     margin-right: 0;
-    margin-top: 7px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    height: 50%;
   }
 
 }
@@ -468,6 +468,9 @@ footer{
 
 /* phone screen  */
 @media (max-width: 426px){
+  .logo{
+    margin-left: 10px;
+  }
   .nav_holder{
     display: none;
   }
@@ -501,7 +504,7 @@ footer{
 
   .left_container{
     width: 100%;
-    height: 300px;
+    height: 380px;
   }
 
   .right_container{
@@ -510,7 +513,7 @@ footer{
   }
 
   .left_container > h1{
-    margin-top: 20px;
+    margin-top: 100px;
     font-size: 35px;
     margin-left: 15px;
   }
@@ -532,25 +535,21 @@ footer{
     margin-top: 10px;
   }
 
-  .Rectangle{
-    width: 500px;
-    height: 180px;
-    margin-left: 0;
-  }
-
-  .Rectangle > h3{
-    margin-top: 130px;
-  }
 
   .card2{
     height: 310px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
+  } 
+
+  .product{
+    justify-content: center;
   }
 
   .wrapper_2{
     margin-left: 0px;
+    margin-top: 0px;
   }
 
   .pro_wrapper > h1{
@@ -561,12 +560,23 @@ footer{
   .pro_wrapper{
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
+    background-color: red;
+    height: 100px;
   }
 
   .pro_nav{
-    margin-right: 0;
+    margin-bottom: 30px;
+    /* background-color: green; */
+    height: 40%;
+    justify-self: center;
+    margin-right: 0px;
+    align-items: center;
+  }
+
+  .pro_nav > nav{
+    font-size: 12px;
   }
 
   footer{
@@ -580,6 +590,26 @@ footer{
   .icon_wrapper{
     width: 100%;
   }
+
+  .icon_wrapper > h1{
+    margin-left: 20px;
+  }
+
+  .phone{
+    margin-left: 20px;
+  }
+
+  .media{
+    margin-left: 20px;
+  }
+
+  .pro_text{
+    /* background-color: blue; */
+    margin-left: 0;
+    height: 40%;
+  }
+  
+
 
 }
 
